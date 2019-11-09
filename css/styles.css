@@ -1,0 +1,184 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables CSS */
+:root {
+    --body-bg         :#eceded; 
+    --text-color      :#53575A;
+    --color-text-light:#fff;
+    --motion-color    :#407088;
+    --dark-color      :#35495e;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    margin-top: 90px;
+    color: var(--text-color);
+    background-color: var(--body-bg);
+    min-height: 1500px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+/* ------------------------- */
+/* Inicio - Menu de navegación */
+/* ------------------------- */
+.container-menu {
+    background-color: var(--motion-color);
+    color: var(--color-text-light);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    z-index: 100;
+    clip-path: circle(55px at 50% 0);
+    transition: .7s ease all;
+}
+
+.container-menu.is-active {
+    clip-path: circle(100% at 50% 0);
+}
+
+.btn-open {
+    font-size: 1.6rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-open:hover {
+    animation: rotar .8s alternate;
+}
+
+@keyframes rotar {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(10deg);}
+    40% {transform: rotate(-15deg);}
+    60% {transform: rotate(15deg);}
+    80% {transform: rotate(-10deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.main-menu {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu li {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.container-menu.is-active li {
+    animation: desplazamiento 1s ease;
+}
+
+@keyframes desplazamiento {
+    from {
+        transform: translateY(1000px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.main-menu li a {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    color: var(--color-light);
+    transition: .2s ease all;
+}
+
+.main-menu a:hover {
+    background-color: var(--dark-color);
+}
+
+.container-header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-header {
+    width: 75%;
+    padding: 40px;
+    background-color: var(--color-text-light);
+    text-align: center;
+    }
+
+.main-title {
+    font-size: 30px;
+    padding: 1rem 0;
+    color: var(--motion-color);
+    text-align: left;
+}
+
+.main-text__contain {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* ------------------------- */
+/* SOCIAL MEDIA */
+/* ------------------------- */
+.social-media-footer {
+    --font-color: var(--motion-color);
+    --font-size: 0.8rem;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 8rem;
+  }
+  
+  .social-columns {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.625rem;
+    font-size: var(--font-size);
+    color: var(--font-color);
+    font-family: var(--body-font);
+    width: 100%;
+  }
+  
+  .social-columns .column {
+    padding: 0.4rem;
+    text-align: center;
+  }
+  
+  .social-columns a {
+    text-decoration: none;
+    color: var(--font-color);
+  }
+
+  .social-columns a:hover {
+    text-decoration: underline;
+  }
+  
+  /* GITHUB */
+  .github-code {
+    color: var(--font-color);
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  
+  .github-code a {
+    text-decoration: none;
+    color: var(--font-color);
+  }
+
+  .github-code a:hover {
+      text-decoration: underline;
+  }
