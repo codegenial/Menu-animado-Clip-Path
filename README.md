@@ -1,9 +1,9 @@
 # Menu-animado-Clip-Path
 Hola, aprende a usar la propiedad clip-path para crear un menú animado.
 
-![Checkbox-Personalizado - COdegenial](https://pbs.twimg.com/media/EGaT9jSWkAAdnbD?format=jpg&name=large)
+![Menu-animado-Clip-Path - Codegenial](https://pbs.twimg.com/media/EI9HcgOW4AA1rrg?format=jpg&name=large)
 
-> [View code on CodePen](https://codepen.io/codegenial/pen/NWWqryX)
+> [View code on CodePen](https://codepen.io/codegenial/pen/NWWzoXG)
 
 ## Community :beers:
 - [Instagram](https://instagram.com/codegenial)
